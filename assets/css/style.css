@@ -1,8 +1,25 @@
-body {
-        background-color: white;
-        font-family: 'JetBrains Mono', monospace;
-        font-family: 'Lato', sans-serif;
-        font-family: 'Rubik', sans-serif;
-        text-align: center;
+html {
+    min-height: 100%;
+    position: relative;
 }
 
+body {
+    background-color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    width: 70%;
+    height: auto;
+}
+
+.nav-item {
+    letter-spacing: 2px;
+    text-decoration: none;   
+}
