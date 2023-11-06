@@ -45,6 +45,15 @@ body {
     margin-right: auto;
 }
 
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    }
+
+
+
+
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
