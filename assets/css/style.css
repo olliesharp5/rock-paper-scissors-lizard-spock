@@ -71,13 +71,35 @@ body {
 
 .controls-area {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
+.btn {
+    text-align: center;
+    flex-basis: 160px;
+    flex-grow: 1;
+    width: 150px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: none;
+    color: #000;
+    font-size: 30px;
+    margin: 10px 10px;
+    font-weight: bold;
+    box-shadow: 0 3px 3px;
+}
+.btn:hover {
+    background-color: #b10d19;
+    color: #f0f0f0;
+}
 
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
         width: 40%;
         height: auto;
+        
     }
 }
