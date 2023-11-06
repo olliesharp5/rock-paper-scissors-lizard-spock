@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: grey;
     font-family: 'JetBrains Mono', monospace;
     font-family: 'Lato', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -12,14 +12,10 @@ body {
 
 header {
     text-align: center;
+    background-color: lightslategray;
 }
 
 .logo {
     width: 70%;
     height: auto;
-}
-
-.nav-item {
-    letter-spacing: 2px;
-    text-decoration: none;   
 }
