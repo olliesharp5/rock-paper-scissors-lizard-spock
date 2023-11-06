@@ -45,8 +45,10 @@ body {
 }
 
 .score-area {
-    display: inline-block;
-    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 /* Media query: smaller tablets and larger (600px and up) */
