@@ -65,6 +65,19 @@ body {
     margin: 0 10px;
 }
 
+.play-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#player,
+#computer {
+    margin-bottom: 10px;
+}
+
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
