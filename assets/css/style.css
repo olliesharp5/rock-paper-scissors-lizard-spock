@@ -32,6 +32,7 @@ body {
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: bold;
+    box-shadow: 0 2px 2px;
 }
 .oval-button:hover {
     background-color: #b10d19;
@@ -49,6 +50,19 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.player-score-count,
+.computer-score-count {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 60px;
+    color: #b10d19;
+}
+
+.round-count {
+    font-size: 18px;
+    margin: 0 10px;
 }
 
 /* Media query: smaller tablets and larger (600px and up) */
