@@ -51,11 +51,18 @@ body {
     align-items: baseline;
     }
 
+
+
 .score {
-    font-size: 50px;
+    font-size: 160%;
     font-weight: bold;
     color: #b10d19;
     margin-bottom: 10px;
+}
+
+.cards {
+    height: auto;
+    width: 60%;
 }
 
 
