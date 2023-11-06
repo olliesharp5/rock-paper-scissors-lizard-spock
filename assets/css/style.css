@@ -78,6 +78,11 @@ body {
     margin-bottom: 10px;
 }
 
+.cards {
+    height: 60%;
+    width: 60%;
+}
+
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
