@@ -18,7 +18,6 @@ body {
 
 header {
     text-align: center;
-    background-color: lightslategray;
 }
 
 .logo {
@@ -26,11 +25,27 @@ header {
     height: auto;
 }
 
+.oval-button {
+    width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #f0f0f0;
+        border: none;
+        color: #000;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+}
+.oval-button:hover {
+    background-color: #b10d19;
+    color: #f0f0f0;
+}
+
 
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
-        width: 70%;
+        width: 50%;
         height: auto;
     }
 }
