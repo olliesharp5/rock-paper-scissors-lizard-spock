@@ -45,50 +45,6 @@ body {
     margin-right: auto;
 }
 
-.score-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.score-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.player-score-count,
-.computer-score-count {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 60px;
-    color: #b10d19;
-}
-
-.round-count {
-    font-size: 18px;
-    margin: 0 10px;
-}
-
-.play-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-#player,
-#computer {
-    margin-bottom: 10px;
-}
-
-.cards {
-    height: 60%;
-    width: 60%;
-}
-
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
