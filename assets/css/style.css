@@ -51,7 +51,12 @@ body {
     align-items: baseline;
     }
 
-
+.score {
+    font-size: 50px;
+    font-weight: bold;
+    color: #b10d19;
+    margin-bottom: 10px;
+}
 
 
 /* Media query: smaller tablets and larger (600px and up) */
