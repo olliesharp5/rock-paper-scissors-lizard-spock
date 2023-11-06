@@ -1,3 +1,9 @@
+* {
+    padding: 1px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 html {
     min-height: 100%;
     position: relative;
@@ -16,6 +22,15 @@ header {
 }
 
 .logo {
-    width: 70%;
+    width: 100%;
     height: auto;
+}
+
+
+/* Media query: smaller tablets and larger (600px and up) */
+@media screen and (min-width: 600px) {
+.logo {
+        width: 70%;
+        height: auto;
+    }
 }
