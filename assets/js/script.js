@@ -9,3 +9,4 @@ const resetButton = document.getElementsByClassName("reset");
 const buttons = document.getElementsByClassName("btn");
 
 const choices = [rock, paper, scissors, lizard, spock];
+
