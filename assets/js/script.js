@@ -59,6 +59,39 @@ function runGame(playerChoice) {
 /**
  * Function checks the winner of each round 
  */
-function checkWinner() {
-
-}
+function checkWinner(playerChoice, botChoice) {
+    if(playerChoice === botChoice) {
+        return "It's a tie!";
+    }
+    switch (playerChoice) {
+        case "rock":
+            if (botChoice === "scissors" || botChoice === "lizard") {
+                return "User wins!";
+            } else {
+                return "Bot wins!";
+            }
+        case "paper":
+            if (botChoice === "rock" || botChoice === "spock") {
+                return "User Wins!";
+            } else {
+                return "Bot wins!";
+            }
+        case "scissors":
+            if (botChoice === "paper" || botChoice === "lizard") {
+                return "User Wins!";
+            } else {
+                return "Bot wins!";
+            }
+        case "lizard":
+            if (botChoice === "spock" || botChoice === "paper") {
+                return "User Wins!";
+            } else {
+                return "Bot wins!";
+            }
+        case "spock":
+            if (botChoice === "scissors" || botChoice === "rock") {
+                return "User Wins!";
+            } else {
+                return "Bot wins!";
+            }
+}}
