@@ -77,6 +77,11 @@ body {
     cursor: pointer;
 }
 
+.diagram {
+    height: 50%;
+    width: 50%;
+}
+
 .game-area {
     width: 80%;
     margin-left: auto;
