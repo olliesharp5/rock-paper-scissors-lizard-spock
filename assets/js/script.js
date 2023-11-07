@@ -47,4 +47,18 @@ function runGame(playerChoice) {
 
     playerPicture.src = `/assets/images/${choices[playerChoice]}.png`;
     playerPicture.alt = choices[playerChoice];
+
+    // Random number selector for bot
+    let botChoice = Math.floor(Math.random() * choices.length);
+    let botPicture = document.getElementById("computer-picture");
+
+    botPicture.src = `/assets/images/${choices[botChoice]}.png`;
+    botPicture.alt = choices[botChoice];
+}
+
+/**
+ * Function checks the winner of each round 
+ */
+function checkWinner() {
+
 }
