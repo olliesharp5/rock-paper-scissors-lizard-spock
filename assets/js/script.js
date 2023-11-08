@@ -84,6 +84,13 @@ function updateBotScore() {
     document.getElementById("computer-score").textContent = botScore;
 }
 
+/**
+ * Function that updates and displays the round number
+ */
+function updateRound() {
+    document.getElementById("round-count").textContent = roundNumber;
+}
+
 
 /**
  * Function that checks the winner of each round and 
@@ -125,6 +132,12 @@ function checkWinner(playerChoice, botChoice) {
                 return "Bot wins!";
         } 
     }}
+
+
+    function roundNumber() {
+        
+    }
+
             
     /**
      * Function that resets the scores 
