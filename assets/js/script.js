@@ -58,7 +58,22 @@ function runGame(playerChoice) {
 }
 
 /**
- * Function checks the winner of each round 
+ * Function that updates and displays the player score 
+ */
+function updatePlayerScore() {
+    document.getElementById("player-score").textContent = playerScore;
+}
+
+/**
+ * Function that updates and displays the bot score 
+ */
+function updateBotScore() {
+    document.getElementById("computer-score").textContent = botScore;
+}
+
+/**
+ * Function that checks the winner of each round and 
+ * calls the functions to change scores 
  */
 function checkWinner(playerChoice, botChoice) {
     if(playerChoice === botChoice) {
@@ -95,9 +110,6 @@ function checkWinner(playerChoice, botChoice) {
             } else {
                 return "Bot wins!";
             }
+            // add part to call functions to change score based on winner and to also increment the round each loop
 }}
-
-function updatePlayerScore() {
-    
-}
 
