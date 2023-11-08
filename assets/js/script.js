@@ -70,9 +70,23 @@ function runGame(playerChoice) {
         botScore++;
         updateBotScore();
     }
+    // Increases round number
     roundNumber++
     updateRound();
+
+    // Limits rounds to 3 and triggers alert
+    if(roundNumber === 3) {
+        if (playerScore > botScore) {
+            alert("The game is over. The user won overall!");
+        } else if (botScore > playerScore) {
+            alert("The game is over. The bot overall!");
+        } else {
+            alert("The game is over. It's a tie!");
+        }
+        resetScores();
+    }
 }
+
 
 /**
  * Function that updates and displays the player score 
