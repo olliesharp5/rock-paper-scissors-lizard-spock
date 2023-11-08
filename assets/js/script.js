@@ -140,6 +140,7 @@ function checkWinner(playerChoice, botChoice) {
      * Function that resets the scores 
      */        
     function resetScores() {
+            roundNumber = 0;    
             playerScore = 0;
             botScore = 0;
             updatePlayerScore();
