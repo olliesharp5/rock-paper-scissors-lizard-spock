@@ -76,6 +76,7 @@ function runGame(playerChoice) {
 
     // Limits rounds to 3 and triggers alert
     if(roundNumber === 3) {
+        // Timeout method pushes alerts by 5 milliseconds
         setTimeout(function() {
         if (playerScore > botScore) {
             alert("The game is over. The user won overall!");
@@ -85,10 +86,9 @@ function runGame(playerChoice) {
             alert("The game is over. It's a tie!");
         }
         resetScores();
-    }, 5);
+    }, 100);
 }
 }
-
 
 /**
  * Function that updates and displays the player score 
@@ -109,7 +109,6 @@ function updateBotScore() {
 function updateRound() {
     document.getElementById("round-count").textContent = roundNumber;
 }
-
 
 /**
  * Function that checks the winner of each round and 
