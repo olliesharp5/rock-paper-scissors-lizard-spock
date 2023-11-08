@@ -1,6 +1,7 @@
 /**
  * Declare constants for the DOM  
 */
+let roundNumber = 0;
 let playerScore = 0;
 let botScore = 0;
 const playerChoice = document.getElementById("player-picture");
@@ -69,6 +70,8 @@ function runGame(playerChoice) {
         botScore++;
         updateBotScore();
     }
+    roundNumber++
+    updateRound();
 }
 
 /**
@@ -132,12 +135,6 @@ function checkWinner(playerChoice, botChoice) {
                 return "Bot wins!";
         } 
     }}
-
-
-    function roundNumber() {
-        
-    }
-
             
     /**
      * Function that resets the scores 
