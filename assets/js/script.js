@@ -76,15 +76,17 @@ function runGame(playerChoice) {
 
     // Limits rounds to 3 and triggers alert
     if(roundNumber === 3) {
+        setTimeout(function() {
         if (playerScore > botScore) {
             alert("The game is over. The user won overall!");
         } else if (botScore > playerScore) {
-            alert("The game is over. The bot overall!");
+            alert("The game is over. The bot won overall!");
         } else {
             alert("The game is over. It's a tie!");
         }
         resetScores();
-    }
+    }, 5);
+}
 }
 
 
@@ -157,6 +159,8 @@ function checkWinner(playerChoice, botChoice) {
             roundNumber = 0;    
             playerScore = 0;
             botScore = 0;
+            playerChoice = null;
+            botChoice = null;
             updatePlayerScore();
             updateBotScore();
 }
