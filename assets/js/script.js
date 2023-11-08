@@ -1,9 +1,10 @@
 /**
  * Declare constants for the DOM  
 */
+let playerScore = 0;
+let botScore = 0;
 const playerChoice = document.getElementById("player-picture");
 const botChoice = document.getElementById("computer-picture");
-const resetButton = document.getElementsByClassName("reset");
 const buttons = document.getElementsByClassName("btn");
 const roundScore = document.getElementsByClassName("round-score");
 
@@ -32,10 +33,15 @@ window.onclick = function (event) {
 */
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
-        let playerChoice = this.getAttribute("data-choice");
+        let playerChoice = parseInt(this.getAttribute("data-choice"));
         runGame(playerChoice);
     });
 }
+
+/**
+ * Event listener for resetting the game 
+ */
+document.getElementsByClassName('reset').addEventListener('click', resetScores);
 
 /**
  * Function displays the user and computer selection 
@@ -55,6 +61,13 @@ function runGame(playerChoice) {
     botPicture.alt = choices[botChoice];
 
     let result = checkWinner(choices[playerChoice], choices[botChoice]);
+    if (result === "User wins!") {
+        playerScore++;
+        updatePlayerScore();
+    } else if (result === "Bot wins!") {
+        botScore++;
+        updateBotScore();
+    }
 }
 
 /**
@@ -63,13 +76,13 @@ function runGame(playerChoice) {
 function updatePlayerScore() {
     document.getElementById("player-score").textContent = playerScore;
 }
-
 /**
  * Function that updates and displays the bot score 
  */
 function updateBotScore() {
     document.getElementById("computer-score").textContent = botScore;
 }
+
 
 /**
  * Function that checks the winner of each round and 
@@ -88,28 +101,32 @@ function checkWinner(playerChoice, botChoice) {
             }
         case "paper":
             if (botChoice === "rock" || botChoice === "spock") {
-                return "User Wins!";
+                return "User wins!";
             } else {
                 return "Bot wins!";
             }
         case "scissors":
             if (botChoice === "paper" || botChoice === "lizard") {
-                return "User Wins!";
+                return "User wins!";
             } else {
                 return "Bot wins!";
             }
         case "lizard":
             if (botChoice === "spock" || botChoice === "paper") {
-                return "User Wins!";
+                return "User wins!";
             } else {
                 return "Bot wins!";
             }
         case "spock":
             if (botChoice === "scissors" || botChoice === "rock") {
-                return "User Wins!";
+                return "User wins!";
             } else {
                 return "Bot wins!";
-            }
-            // add part to call functions to change score based on winner and to also increment the round each loop
-}}
+        } 
+    }}
+            
+            
+//function resetScores() {}
+
+
 
