@@ -108,6 +108,10 @@ body {
     margin-bottom: 10px;
 }
 
+.round {
+    margin: 20px;
+}
+
 .cards {
     height: auto;
     width: 80%;

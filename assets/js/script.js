@@ -61,6 +61,7 @@ function runGame(playerChoice) {
     botPicture.alt = choices[botChoice];
 
     let result = checkWinner(choices[playerChoice], choices[botChoice]);
+    document.getElementById("message").textContent = result;
     if (result === "User wins!") {
         playerScore++;
         updatePlayerScore();
@@ -125,7 +126,9 @@ function checkWinner(playerChoice, botChoice) {
         } 
     }}
             
-            
+    /**
+     * Function that resets the scores 
+     */        
     function resetScores() {
             playerScore = 0;
             botScore = 0;
