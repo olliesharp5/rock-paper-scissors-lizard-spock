@@ -41,7 +41,7 @@ for (let i = 0; i < buttons.length; i++) {
 /**
  * Event listener for resetting the game 
  */
-document.getElementsByClassName('reset').addEventListener('click', resetScores);
+document.getElementsByClassName('reset')[0].addEventListener('click', resetScores);
 
 /**
  * Function displays the user and computer selection 
@@ -126,7 +126,12 @@ function checkWinner(playerChoice, botChoice) {
     }}
             
             
-//function resetScores() {}
+    function resetScores() {
+            playerScore = 0;
+            botScore = 0;
+            updatePlayerScore();
+            updateBotScore();
+}
 
 
 
