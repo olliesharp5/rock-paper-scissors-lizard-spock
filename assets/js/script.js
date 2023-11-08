@@ -1,12 +1,11 @@
 /**
  * Declare constants for the DOM  
 */
-const playerScore = document.getElementsByClassName("player-score-count");
-const botScore = document.getElementsByClassName("computer-score-count");
 const playerChoice = document.getElementById("player-picture");
 const botChoice = document.getElementById("computer-picture");
 const resetButton = document.getElementsByClassName("reset");
 const buttons = document.getElementsByClassName("btn");
+const roundScore = document.getElementsByClassName("round-score");
 
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
@@ -54,6 +53,8 @@ function runGame(playerChoice) {
 
     botPicture.src = `/assets/images/${choices[botChoice]}.png`;
     botPicture.alt = choices[botChoice];
+
+    let result = checkWinner(choices[playerChoice], choices[botChoice]);
 }
 
 /**
@@ -95,3 +96,8 @@ function checkWinner(playerChoice, botChoice) {
                 return "Bot wins!";
             }
 }}
+
+function updatePlayerScore() {
+    
+}
+
