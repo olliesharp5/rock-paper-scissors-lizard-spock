@@ -4,8 +4,8 @@
 let roundNumber = 0;
 let playerScore = 0;
 let botScore = 0;
-const playerChoice = document.getElementById("player-picture");
-const botChoice = document.getElementById("computer-picture");
+let playerChoice = document.getElementById("player-picture");
+let botChoice = document.getElementById("computer-picture");
 const buttons = document.getElementsByClassName("btn");
 const roundScore = document.getElementsByClassName("round-score");
 
@@ -55,7 +55,7 @@ function runGame(playerChoice) {
     playerPicture.alt = choices[playerChoice];
 
     // Random number selector for bot
-    let botChoice = Math.floor(Math.random() * choices.length);
+    botChoice = Math.floor(Math.random() * choices.length);
     let botPicture = document.getElementById("computer-picture");
 
     botPicture.src = `/assets/images/${choices[botChoice]}.png`;
