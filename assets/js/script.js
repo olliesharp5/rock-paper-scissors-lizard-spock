@@ -79,11 +79,11 @@ function runGame(playerChoice) {
         // Timeout method pushes alerts by 5 milliseconds
         setTimeout(function() {
         if (playerScore > botScore) {
-            alert("The game is over. The user won overall!");
+            alert("The game is over. YOU WON OVERALL!" + "\n" + "\n" + "To begin a new game, make another play!");
         } else if (botScore > playerScore) {
-            alert("The game is over. The bot won overall!");
+            alert("The game is over. THE COMPUTER WON OVERALL" + "\n" + "\n" + "To begin a new game, make another play!");
         } else {
-            alert("The game is over. It's a tie!");
+            alert("The game is over. It's a tie!" + "\n" + "\n" + "To begin a new game, make another play!");
         }
         resetScores();
     }, 100);
