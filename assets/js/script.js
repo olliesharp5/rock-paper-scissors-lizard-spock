@@ -50,14 +50,14 @@ document.getElementsByClassName('reset')[0].addEventListener('click', resetScore
 function runGame(playerChoice) {
     let playerPicture = document.getElementById("player-picture");
 
-    playerPicture.src = `/assets/images/${choices[playerChoice]}.png`;
+    playerPicture.src = `./assets/images/${choices[playerChoice]}.png`;
     playerPicture.alt = choices[playerChoice];
 
     // Random number selector for bot
     botChoice = Math.floor(Math.random() * choices.length);
     let botPicture = document.getElementById("computer-picture");
 
-    botPicture.src = `/assets/images/${choices[botChoice]}.png`;
+    botPicture.src = `./assets/images/${choices[botChoice]}.png`;
     botPicture.alt = choices[botChoice];
 
     let result = checkWinner(choices[playerChoice], choices[botChoice]);
