@@ -23,13 +23,13 @@ body {
 }
 
 .oval-button {
-    width: 150px;
-    height: 60px;
-    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
     background-color: antiquewhite;
     border: none;
     color: #b10d19;;
-    font-size: 30px;
+    font-size: 20px;
     margin: 30px 30px;
     font-weight: bold;
     box-shadow: 0 2px 2px;
@@ -84,7 +84,7 @@ body {
 }
 
 .game-area {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color:antiquewhite;
@@ -104,15 +104,14 @@ body {
 }
 
 .score {
-    font-size: 160%;
+    font-size: 120%;
     font-weight: bold;
     color: #b10d19;
     margin-bottom: 10px;
 }
 
 .round {
-    margin: 20px;
-    font-size: 160%;
+    font-size: 120%;
 }
 
 #message {
@@ -123,8 +122,8 @@ body {
 }
 
 .cards {
-    height: auto;
-    width: 80%;
+    height: 120px;
+    width: 120px;
 }
 
 .controls-area {
@@ -136,7 +135,7 @@ body {
 
 .btn {
     text-align: center;
-    flex-basis: 160px;
+    flex-basis: 130px;
     flex-grow: 1;
     background-color: #b10d19;
     border: none;
@@ -157,16 +156,50 @@ body {
         width: 60%;
         height: auto;
     }
+
+.cards {
+        height: 170px;
+        width: 170px;
+}
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-   
+.game-area {
+        width: 80%;
+    }
+
+.score {
+    font-size: 160%;   
+}
+
+.round {
+    font-size: 160%;
+    margin: 20px;
+    padding: 30px;
+}
+
+.oval-button {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30px;
+}    
+
+.player-wrapper 
+.computer-wrapper {
+    padding: 30px;
+}
+
 }
 
 
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
+    .cards {
+            height: 200px;
+            width: 200px;
+        }
    
 }
 
