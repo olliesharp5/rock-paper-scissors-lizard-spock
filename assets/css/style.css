@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: grey;
+    background-image: linear-gradient(#b10d19, #f0882f);
     font-family: 'JetBrains Mono', monospace;
     font-family: 'Lato', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -23,20 +23,20 @@ body {
 }
 
 .oval-button {
-    width: 100px;
-    height: 25px;
-    border-radius: 12.5px;
-    background-color: #f0f0f0;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: antiquewhite;
     border: none;
-    color: #000;
-    font-size: 16px;
-    margin: 10px 10px;
+    color: #b10d19;;
+    font-size: 30px;
+    margin: 30px 30px;
     font-weight: bold;
     box-shadow: 0 2px 2px;
 }
 .oval-button:hover {
     background-color: #b10d19;
-    color: #f0f0f0;
+    color: antiquewhite;
 }
 
 /* The Modal background */
@@ -87,6 +87,8 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color:antiquewhite;
+    border-radius: 25px;
 }
 
 .display {
@@ -110,6 +112,14 @@ body {
 
 .round {
     margin: 20px;
+    font-size: 160%;
+}
+
+#message {
+    margin-top: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #b10d19;;
 }
 
 .cards {
@@ -130,9 +140,9 @@ body {
     flex-grow: 1;
     width: 150px;
     height: 50px;
-    background-color: #f0f0f0;
+    background-color: #b10d19;
     border: none;
-    color: #000;
+    color: white;
     font-size: 30px;
     margin: 10px 10px;
     font-weight: bold;

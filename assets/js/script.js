@@ -7,7 +7,6 @@ let botScore = 0;
 let playerChoice = document.getElementById("player-picture");
 let botChoice = document.getElementById("computer-picture");
 const buttons = document.getElementsByClassName("btn");
-const roundScore = document.getElementsByClassName("round-score");
 
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
