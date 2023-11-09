@@ -138,8 +138,6 @@ body {
     text-align: center;
     flex-basis: 160px;
     flex-grow: 1;
-    width: 150px;
-    height: 50px;
     background-color: #b10d19;
     border: none;
     color: white;
@@ -156,7 +154,23 @@ body {
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
-        width: 40%;
+        width: 60%;
         height: auto;
     }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+   
+}
+
+
+/* Media query: laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+   
+}
+
+/* Media query: desktops and larger (1200px and up) */
+@media screen and (min-width: 1200px) {
+
 }
