@@ -22,6 +22,7 @@ RPSLS is a user-friendly website that offers an online version of the popular ga
       - [HTML](#html)
       - [CSS](#css)
       - [WebAim Contrast checker](#webaim-contrast-checker)
+    - [JavaScript](#javascript)
       - [Fixed Bugs](#fixed-bugs)
       - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
@@ -150,18 +151,22 @@ In the future I would like to add,
 #### HTML
 No errors were found when passing through the official W3C validator.
 
-![html_validator](./assets/readme-assets/html_validator.png)
+![html_validator](insert filepath)
 
 #### CSS
 No errors were found when passing through the official (Jigsaw) validator.
 
-![css_validator](./assets/readme-assets/css_validator.png)
+![css_validator](insert filepath)
 
 #### WebAim Contrast checker 
 No errors were found when passing through the contrast validator.
 
-![contrast_validator](./assets/readme-assets/contrast_validator.png)
+![contrast_validator](insert filepath)
 
+### JavaScript
+No errors were found when passing though the JSHint validator
+
+![javascript_validator](insert filepath)
 
 #### Fixed Bugs
 
@@ -170,7 +175,7 @@ No errors were found when passing through the contrast validator.
 
 #### Unfixed Bugs
 
-* The view from the Samsung Galaxy Fold creates a margin down the right hand side of the page which means some text spills over their containers. 
+* 
 
 ## Deployment
 
@@ -187,15 +192,9 @@ No errors were found when passing through the contrast validator.
 
 ### Content
 
-* Instructions on how to target the placeholder in the form was taken from https://www.w3schools.com/cssref/sel_placeholder.php#:~:text=The%20%3A%3Aplaceholder%20selector%20selects,value%20of%20an%20input%20field.
-* Instructions on how to implement the navigation bar dropdown toggle was taken from the Love Running tutorial during my Code Institute curriculum.
-* The idea for the style of the timetable was inspired by the Love Running project during the Code Institute curriculum. 
-* The responsiveness of the text over the hero image was inspired from the Love Running project during the Code Insitue curriculum.
-* The idea to implement scroll-padding was provided by my mentor. 
+* 
 
 ### Media
 
 * The icon used for the favicon is from favicon.io
-* The photos used on the landing page are from pexels.com
-* The images used for the shuttlecock icon bullet points are from flaticon.com
-* The icons in the footer were taken from Font Awesome
+* 
