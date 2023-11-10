@@ -50,18 +50,18 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(177, 13, 25);
-    background-color: rgba(177, 13, 25, 0.4);
+    background-color: rgba(250, 235, 215, 0.4);
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: grey;
+    background-color: rgb(250, 235, 215);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 /* The Close Button */
@@ -80,8 +80,8 @@ body {
 }
 
 .diagram {
-    height: 50%;
-    width: 50%;
+    height: auto;
+    width: 30%;
 }
 
 .game-area {
