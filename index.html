@@ -25,6 +25,7 @@
      <div>
         <img class="logo" src="assets/images/rpsls_logo.png" alt="logo">
      </div>
+     <!-- Rules button -->
      <div>
         <button id="rules" class="oval-button">Rules</button>
       
@@ -39,24 +40,25 @@
                 decapitates Lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock, and as it always has, Rock crushes
                 Scissors.</p>
             </div>
-
         </div>
      </div>
     </header>
+    <!-- Game area -->
     <main class="game-area">
         <div class="display">
+            <!-- Player div -->
         <div class="player-wrapper">
             <h2 class="score">Player Score: <span id="player-score">0</span></h2>
             <div>
                 <img id="player-picture" class="cards" src="./assets/images/question_mark.png" alt="player-choice">
             </div>
         </div>
-        
+        <!-- Round div -->
         <div class="round">
             <p>Round <span id="round-count">0</span> of 3</p>
             <p id="message"></p>
         </div>
-        
+        <!-- Computer div -->
         <div class="computer-wrapper">
             <h2 class="score">Computer Score: <span id="computer-score">0</span></h2>
             <div>
@@ -67,7 +69,7 @@
         <div id="reset">
             <button class="reset oval-button">Reset</button>
         </div>
-
+        <!-- Buttons area -->
         <div class="controls-area">
             <button aria-label="Rock" data-choice="0" class="btn" id="rock">Rock</button>
             <button aria-label="Paper" data-choice="1" class="btn" id="paper">Paper</button>

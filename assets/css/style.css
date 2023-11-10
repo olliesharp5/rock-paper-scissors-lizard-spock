@@ -159,7 +159,7 @@ body {
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 

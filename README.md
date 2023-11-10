@@ -196,9 +196,14 @@ No errors were found when passing though the JSHint validator
 
 ### Content
 
+* The code for the modal element in HTML, CSS and JavaScript was created with the assistance of the template found in: https://www.w3schools.com/howto/howto_css_modals.asp 
+* The timeout element used in JavaScript used to delay the display of the alert message was found in: https://www.w3schools.com/jsref/met_win_settimeout.asp 
+* The CSS attribute to fade the backfround color was found in: https://www.w3schools.com/css/css3_gradients.asp 
 * 
 
 ### Media
 
 * The icon used for the favicon is from favicon.io
-* 
+* The image used for the title is from pngwing.com
+* The images used for the play cards have been cut from the png used in the title
+* The image used for the question mark card is 
