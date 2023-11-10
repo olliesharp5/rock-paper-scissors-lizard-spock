@@ -127,8 +127,12 @@ body {
     width: 120px;
 }
 
+#reset {
+    margin-bottom: 60px;
+}
+
 .controls-area {
-    margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -138,18 +142,18 @@ body {
     text-align: center;
     flex-basis: 130px;
     flex-grow: 1;
-    background-color: #b10d19;
+    background-color: antiquewhite;
     border: none;
-    color: white;
+    color: #b10d19;
     font-size: 30px;
     margin: 10px 10px;
     font-weight: bold;
-    box-shadow: 0 3px 3px;
+    box-shadow: 5px 5px 5px;
     cursor: pointer;
 }
 .btn:hover {
     background-color: #b10d19;
-    color: #f0f0f0;
+    color: antiquewhite;
 }
 
 /* Media query: smaller tablets and larger (600px and up) */
