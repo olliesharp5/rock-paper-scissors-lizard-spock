@@ -171,7 +171,9 @@ No errors were found when passing though the JSHint validator
 #### Fixed Bugs
 
 * Timeout feature 
-*
+* Images not displaying 
+* Event listener for buttons not working correctly 
+* Cursor missing from buttons
 
 #### Unfixed Bugs
 
