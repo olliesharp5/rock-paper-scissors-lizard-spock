@@ -1,6 +1,3 @@
-/**
- * Declare constants for the DOM  
-*/
 let roundNumber = 0;
 let playerScore = 0;
 let botScore = 0;
@@ -62,10 +59,10 @@ function runGame(playerChoice) {
 
     let result = checkWinner(choices[playerChoice], choices[botChoice]);
     document.getElementById("message").textContent = result;
-    if (result === "User wins!") {
+    if (result === "Player Wins!") {
         playerScore++;
         updatePlayerScore();
-    } else if (result === "Bot wins!") {
+    } else if (result === "Computer Wins!") {
         botScore++;
         updateBotScore();
     }
@@ -120,33 +117,33 @@ function checkWinner(playerChoice, botChoice) {
     switch (playerChoice) {
         case "rock":
             if (botChoice === "scissors" || botChoice === "lizard") {
-                return "User wins!";
+                return "Player Wins!";
             } else {
-                return "Bot wins!";
+                return "Computer Wins!";
             }
         case "paper":
             if (botChoice === "rock" || botChoice === "spock") {
-                return "User wins!";
+                return "Player Wins!";
             } else {
-                return "Bot wins!";
+                return "Computer Wins!";
             }
         case "scissors":
             if (botChoice === "paper" || botChoice === "lizard") {
-                return "User wins!";
+                return "Player Wins!";
             } else {
-                return "Bot wins!";
+                return "Computer Wins!";
             }
         case "lizard":
             if (botChoice === "spock" || botChoice === "paper") {
-                return "User wins!";
+                return "Player Wins!";
             } else {
-                return "Bot wins!";
+                return "Computer Wins!";
             }
         case "spock":
             if (botChoice === "scissors" || botChoice === "rock") {
-                return "User wins!";
+                return "Player Wins!";
             } else {
-                return "Bot wins!";
+                return "Computer Wins!";
         } 
     }}
             

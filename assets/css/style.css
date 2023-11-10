@@ -33,6 +33,7 @@ body {
     margin: 30px 30px;
     font-weight: bold;
     box-shadow: 0 2px 2px;
+    cursor: pointer;
 }
 .oval-button:hover {
     background-color: #b10d19;
@@ -144,6 +145,7 @@ body {
     margin: 10px 10px;
     font-weight: bold;
     box-shadow: 0 3px 3px;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: #b10d19;
@@ -153,21 +155,21 @@ body {
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
 .logo {
-        width: 60%;
-        height: auto;
-    }
+    width: 60%;
+    height: auto;
+}
 
 .cards {
-        height: 170px;
-        width: 170px;
+    height: 170px;
+    width: 170px;
 }
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 .game-area {
-        width: 80%;
-    }
+    width: 80%;
+}
 
 .score {
     font-size: 160%;   
@@ -190,17 +192,15 @@ body {
 .computer-wrapper {
     padding: 30px;
 }
-
 }
 
 
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
-    .cards {
-            height: 200px;
-            width: 200px;
-        }
-   
+.cards {
+    height: 200px;
+    width: 200px;
+}
 }
 
 /* Media query: desktops and larger (1200px and up) */
