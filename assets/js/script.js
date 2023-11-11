@@ -65,7 +65,7 @@ function runGame(playerChoice) {
         updateBotScore();
     }
     // Increases round number
-    roundNumber++
+    roundNumber++;
     updateRound();
 
     // Limits rounds to 3 and triggers alert
@@ -162,7 +162,5 @@ let botPicture = document.getElementById("computer-picture");
             updateRound();
             playerPicture.src = "./assets/images/question_mark.png";
             botPicture.src = "./assets/images/question_mark.png";
-}
-
-
-
+            document.getElementById("message").textContent = "";
+    }
