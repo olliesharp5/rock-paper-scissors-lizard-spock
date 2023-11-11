@@ -158,6 +158,7 @@ function checkWinner(playerChoice, botChoice) {
             botChoice = null;
             updatePlayerScore();
             updateBotScore();
+            updateRound();
 }
 
 

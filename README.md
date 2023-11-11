@@ -174,7 +174,7 @@ No errors were found when passing though the JSHint validator
 * Images not displaying 
 * Event listener for buttons not working correctly 
 * Cursor missing from buttons
-* Round counter doesnt go down to 0 in line with player scores 
+* Round counter doesnt reset to zero in line with player scores - This bug occurred as the `updateRound()` function was not called in the `resetScores()` function. To fix this issue I only needed to update the 'resetScores()' function. 
 * Cards dont reset to placeholder image when reset 
 
 #### Unfixed Bugs
