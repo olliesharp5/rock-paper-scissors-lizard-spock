@@ -26,18 +26,19 @@ body {
     width: 100px;
     height: 30px;
     border-radius: 15px;
-    background-color: antiquewhite;
+    background-color: #FFFFFF;
     border: none;
     color: #b10d19;;
     font-size: 20px;
-    margin: 30px 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
     box-shadow: 0 2px 2px;
     cursor: pointer;
 }
 .oval-button:hover {
     background-color: #b10d19;
-    color: antiquewhite;
+    color: #FFFFFF;
 }
 
 /* The Modal background */
@@ -55,7 +56,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: rgb(250, 235, 215);
+    background-color: #FFFFFF;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -88,8 +89,9 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color:antiquewhite;
+    background-color:#FFFFFF;
     border-radius: 25px;
+    box-shadow: 7px 7px 20px 20px;
 }
 
 .display {
@@ -143,7 +145,7 @@ body {
     text-align: center;
     flex-basis: 130px;
     flex-grow: 1;
-    background-color: antiquewhite;
+    background-color: #FFFFFF;
     border: none;
     color: #b10d19;
     font-size: 30px;
@@ -154,7 +156,7 @@ body {
 }
 .btn:hover {
     background-color: #b10d19;
-    color: antiquewhite;
+    color: #FFFFFF;
 }
 
 /* Media query: smaller tablets and larger (600px and up) */
