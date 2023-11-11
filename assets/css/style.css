@@ -125,6 +125,7 @@ body {
 .cards {
     height: 120px;
     width: 120px;
+    margin-top: 50px;
 }
 
 #reset {
@@ -209,5 +210,8 @@ body {
 
 /* Media query: desktops and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
-
+.cards {
+        height: 250px;
+        width: 250px;
+    }
 }

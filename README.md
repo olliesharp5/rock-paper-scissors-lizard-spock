@@ -174,9 +174,8 @@ No errors were found when passing though the JSHint validator
 * Images not displaying upon deploying the website to GitHub Pages - 
 * Event listener for buttons not working correctly 
 * Cursor missing from buttons - This bug was resolved by adding the "cursor" atrribute in CSS. 
-* Round counter doesnt reset to zero in line with player scores - This bug occurred as the `updateRound()` function was not called in the `resetScores()` function. To fix this issue I only needed to update the 'resetScores()' function. 
-* Upon resetting the game, the pictures wounldn't return to their default "question mark" images 
-* Cards dont reset to placeholder image when reset 
+* Round counter doesnt reset to zero in line with player scores - This bug occurred as the `updateRound()` function was not called in the `resetScores()` function. To fix this issue I only needed to update the 'resetScores()' function to include the UpdateRound() function.
+* Upon resetting the game, the pictures wouldn't return to their default "question mark" images - This bug was fixed by calling the player and computer default images in the resetScores function. Additionally I needed to define the variables playerPicture and botPicture at the beginning af the function
 
 #### Unfixed Bugs
 

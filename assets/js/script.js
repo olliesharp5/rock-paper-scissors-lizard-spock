@@ -70,7 +70,7 @@ function runGame(playerChoice) {
 
     // Limits rounds to 3 and triggers alert
     if(roundNumber === 3) {
-        // Timeout method pushes alerts by 5 milliseconds
+        // Timeout method pushes alerts by 100 milliseconds
         setTimeout(function() {
         if (playerScore > botScore) {
             alert("The game is over. YOU WON OVERALL!" + "\n" + "\n" + "To begin a new game, make another play!");
@@ -160,8 +160,8 @@ let botPicture = document.getElementById("computer-picture");
             updatePlayerScore();
             updateBotScore();
             updateRound();
-            playerPicture.src = "/assets/images/question_mark.png";
-            botPicture.src = "/assets/images/question_mark.png";
+            playerPicture.src = "./assets/images/question_mark.png";
+            botPicture.src = "./assets/images/question_mark.png";
 }
 
 
