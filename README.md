@@ -170,11 +170,12 @@ No errors were found when passing though the JSHint validator
 
 #### Fixed Bugs
 
-* Timeout feature 
-* Images not displaying 
+* The alert to announce the outcome of the game was triggered in time with the final selection being made by the player - This bug was fixed by adding a "timeout" element in JavaScript to delay the display of the alert by 100 milliseconds. 
+* Images not displaying upon deploying the website to GitHub Pages - 
 * Event listener for buttons not working correctly 
-* Cursor missing from buttons
+* Cursor missing from buttons - This bug was resolved by adding the "cursor" atrribute in CSS. 
 * Round counter doesnt reset to zero in line with player scores - This bug occurred as the `updateRound()` function was not called in the `resetScores()` function. To fix this issue I only needed to update the 'resetScores()' function. 
+* Upon resetting the game, the pictures wounldn't return to their default "question mark" images 
 * Cards dont reset to placeholder image when reset 
 
 #### Unfixed Bugs

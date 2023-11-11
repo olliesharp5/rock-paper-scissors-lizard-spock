@@ -1,10 +1,8 @@
 let roundNumber = 0;
 let playerScore = 0;
 let botScore = 0;
-let playerChoice = document.getElementById("player-picture");
-let botChoice = document.getElementById("computer-picture");
-const buttons = document.getElementsByClassName("btn");
 
+const buttons = document.getElementsByClassName("btn");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // Modal
@@ -151,6 +149,9 @@ function checkWinner(playerChoice, botChoice) {
      * Function that resets the scores 
      */        
     function resetScores() {
+let playerPicture = document.getElementById("player-picture");
+let botPicture = document.getElementById("computer-picture");
+
             roundNumber = 0;    
             playerScore = 0;
             botScore = 0;
@@ -159,6 +160,8 @@ function checkWinner(playerChoice, botChoice) {
             updatePlayerScore();
             updateBotScore();
             updateRound();
+            playerPicture.src = "/assets/images/question_mark.png";
+            botPicture.src = "/assets/images/question_mark.png";
 }
 
 
