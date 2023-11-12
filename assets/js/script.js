@@ -2,6 +2,8 @@ let roundNumber = 0;
 let playerScore = 0;
 let botScore = 0;
 
+const playerPicture = document.getElementById("player-picture");
+const botPicture = document.getElementById("computer-picture");
 const buttons = document.getElementsByClassName("btn");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
@@ -133,9 +135,6 @@ function checkWinner(playerChoice, botChoice) {
      * Function that resets the scores and values 
      */        
     function resetScores() {
-let playerPicture = document.getElementById("player-picture");
-let botPicture = document.getElementById("computer-picture");
-
             roundNumber = 0;    
             playerScore = 0;
             botScore = 0;
