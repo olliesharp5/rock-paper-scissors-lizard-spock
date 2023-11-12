@@ -24,13 +24,10 @@
         <img class="logo" src="assets/images/rpsls_logo.png" alt="logo">
      </div>
      <!-- Rules button -->
-     <div>
+     
         <button id="rules" class="oval-button">Rules</button>
-      
-        <!-- The Modal -->
+        <!-- The Rules Modal -->
         <div id="rules-modal" class="modal">
-        
-            <!-- Modal content -->
             <div class="modal-content">
                 <span id="rules-close" class="close">&times;</span>
                 <img class="diagram" src="./assets/images/rules.png" alt="rules-diagram">
@@ -75,6 +72,15 @@
             <button aria-label="Lizard" data-choice="3" class="btn" id="lizard">Lizard</button>
             <button aria-label="Spock" data-choice="4" class="btn" id="spock">Spock</button>
         </div>
+
+        <!-- The game over modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <span id="game-over-close" class="close">&times;</span>
+            <p id="game-over-message" class="game-over-text"></p>
+        </div>
+    </div>
+
     </main>
     <footer>
         <ul>
