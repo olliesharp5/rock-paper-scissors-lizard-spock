@@ -30,7 +30,7 @@ body {
     border-radius: 15px;
     background-color: #FFFFFF;
     border: none;
-    color: #b10d19;;
+    color: #b10d19;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -38,6 +38,7 @@ body {
     box-shadow: 0 2px 2px;
     cursor: pointer;
 }
+
 .oval-button:hover {
     background-color: #b10d19;
     color: #FFFFFF;
@@ -96,7 +97,7 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 7px 7px 20px 20px;
 }
@@ -106,10 +107,9 @@ body {
     justify-content: center;
     align-items: baseline;
     margin: 10px 10px;
-    }
+}
 
-.player-wrapper
-.computer-wrapper {
+.player-wrapper .computer-wrapper {
     margin-left: 5px;
 }
 
@@ -128,7 +128,8 @@ body {
     margin-top: 30px;
     text-decoration: underline;
     font-weight: bold;
-    color: #b10d19;;
+    color: #b10d19;
+    ;
 }
 
 .cards {
@@ -161,6 +162,7 @@ body {
     box-shadow: 5px 5px 5px;
     cursor: pointer;
 }
+
 .btn:hover {
     background-color: #b10d19;
     color: #FFFFFF;
@@ -193,58 +195,57 @@ footer i {
 
 /* Media query: smaller tablets and larger (600px and up) */
 @media screen and (min-width: 600px) {
-.logo {
-    width: 50%;
-    height: auto;
-}
+    .logo {
+        width: 50%;
+        height: auto;
+    }
 
-.cards {
-    height: 170px;
-    width: 170px;
-}
+    .cards {
+        height: 170px;
+        width: 170px;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-.game-area {
-    width: 80%;
-}
+    .game-area {
+        width: 80%;
+    }
 
-.score {
-    font-size: 160%;   
-}
+    .score {
+        font-size: 160%;
+    }
 
-.round {
-    font-size: 160%;
-    margin: 20px;
-    padding: 30px;
-}
+    .round {
+        font-size: 160%;
+        margin: 20px;
+        padding: 30px;
+    }
 
-.oval-button {
-    width: 150px;
-    height: 60px;
-    border-radius: 30px;
-    font-size: 30px;
-}    
+    .oval-button {
+        width: 150px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 30px;
+    }
 
-.player-wrapper 
-.computer-wrapper {
-    padding: 30px;
-}
+    .player-wrapper .computer-wrapper {
+        padding: 30px;
+    }
 }
 
 
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
-.cards {
-    height: 200px;
-    width: 200px;
-}
+    .cards {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 /* Media query: desktops and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
-.cards {
+    .cards {
         height: 250px;
         width: 250px;
     }

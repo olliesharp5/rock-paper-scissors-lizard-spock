@@ -5,7 +5,7 @@ let botScore = 0;
 const playerPicture = document.getElementById("player-picture");
 const botPicture = document.getElementById("computer-picture");
 const buttons = document.getElementsByClassName("btn");
-const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+const CHOICES = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // Modal
 const modal = document.getElementById("myModal");
@@ -31,17 +31,17 @@ window.onclick = function (event) {
 function runGame(playerChoice) {
     let playerPicture = document.getElementById("player-picture");
 
-    playerPicture.src = `./assets/images/${choices[playerChoice]}.png`;
-    playerPicture.alt = choices[playerChoice];
+    playerPicture.src = `./assets/images/${CHOICES[playerChoice]}.png`;
+    playerPicture.alt = CHOICES[playerChoice];
 
     // Random number selector for bot
-    botChoice = Math.floor(Math.random() * choices.length);
+    botChoice = Math.floor(Math.random() * CHOICES.length);
     let botPicture = document.getElementById("computer-picture");
 
-    botPicture.src = `./assets/images/${choices[botChoice]}.png`;
-    botPicture.alt = choices[botChoice];
+    botPicture.src = `./assets/images/${CHOICES[botChoice]}.png`;
+    botPicture.alt = CHOICES[botChoice];
 
-    let result = checkWinner(choices[playerChoice], choices[botChoice]);
+    let result = checkWinner(CHOICES[playerChoice], CHOICES[botChoice]);
     document.getElementById("message").textContent = result;
     if (result === "Player Wins!") {
         playerScore++;
