@@ -73,11 +73,11 @@ function runGame(playerChoice) {
         // Timeout method pushes alerts by 100 milliseconds
         setTimeout(function() {
         if (playerScore > botScore) {
-            alert("The game is over. YOU WON OVERALL!" + "\n" + "\n" + "To begin a new game, make another play!");
+            alert("The game is over. YOU WON OVERALL!" + "\n" + "\n" + "To begin a new game, click OK");
         } else if (botScore > playerScore) {
-            alert("The game is over. THE COMPUTER WON OVERALL" + "\n" + "\n" + "To begin a new game, make another play!");
+            alert("The game is over. THE COMPUTER WON OVERALL" + "\n" + "\n" + "To begin a new game, click OK");
         } else {
-            alert("The game is over. It's a tie!" + "\n" + "\n" + "To begin a new game, make another play!");
+            alert("The game is over. It's a tie!" + "\n" + "\n" + "To begin a new game, click OK");
         }
         resetScores();
     }, 100);
@@ -146,7 +146,7 @@ function checkWinner(playerChoice, botChoice) {
     }}
             
     /**
-     * Function that resets the scores 
+     * Function that resets the scores and values 
      */        
     function resetScores() {
 let playerPicture = document.getElementById("player-picture");

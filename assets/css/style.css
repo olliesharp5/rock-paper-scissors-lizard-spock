@@ -85,6 +85,11 @@ body {
     width: 30%;
 }
 
+.rules-text {
+    font-size: 180%;
+    color: #b10d19;
+}
+
 .game-area {
     width: 90%;
     margin-left: auto;
