@@ -86,11 +86,11 @@ body {
 
 .diagram {
     height: auto;
-    width: 30%;
+    width: 70%;
 }
 
 .rules-text {
-    font-size: 180%;
+    font-size: 120%;
     color: #b10d19;
 }
 
@@ -250,6 +250,14 @@ footer i {
 
     .player-wrapper .computer-wrapper {
         padding: 30px;
+    }
+
+    .diagram {
+        width: 40%;
+    }
+       
+    .rules-text {
+        font-size: 160%;
     }
 }
 
