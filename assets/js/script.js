@@ -30,13 +30,13 @@ window.onclick = function (event) {
 gameOverCloseButton.onclick = function() {
     gameOverModal.style.display = "none";
 resetScores();
-}
+};
 
 window.onclick = function (event) {
     if (event.target == gameOverModal) {
         gameOverModal.style.display = "none";
-        resetScores()
-    }
+        resetScores();
+    };
 }
 
 /**
