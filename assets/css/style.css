@@ -7,12 +7,12 @@
 }
 
 html {
-    min-height: 100%;
+    max-height: 1100px;
     position: relative;
 }
 
 body {
-    background-image: linear-gradient(#b10d19, #f0882f);
+    background-image: linear-gradient(#b10d19, #f0882f, #b10d19);
     font-family: 'JetBrains Mono', monospace;
     font-family: 'Lato', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -164,6 +164,31 @@ body {
 .btn:hover {
     background-color: #b10d19;
     color: #FFFFFF;
+}
+
+footer {
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer i {
+    font-size: 170%;
+    padding: 4%;
+    color: #b10d19;
 }
 
 /* Media query: smaller tablets and larger (600px and up) */
