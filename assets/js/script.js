@@ -4,23 +4,23 @@ let botScore = 0;
 
 const playerPicture = document.getElementById("player-picture");
 const botPicture = document.getElementById("computer-picture");
-const buttons = document.getElementsByClassName("btn");
+const actionButtons = document.getElementsByClassName("btn");
 const CHOICES = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // Modal
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("rules");
-const span = document.getElementsByClassName("close")[0];
+const modalBody = document.getElementById("myModal");
+const rulesButton = document.getElementById("rules");
+const closeButton = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-    modal.style.display = "block";
+rulesButton.onclick = function () {
+    modalBody.style.display = "block";
 };
-span.onclick = function () {
-    modal.style.display = "none";
+closeButton.onclick = function () {
+    modalBody.style.display = "none";
 };
 window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalBody) {
+        modalBody.style.display = "none";
     }
 };
 
@@ -146,8 +146,8 @@ function checkWinner(playerChoice, botChoice) {
  * Event listener to identify which selection was made 
  * based on which button was pressed 
 */
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function () {
+for (let i = 0; i < actionButtons.length; i++) {
+    actionButtons[i].addEventListener('click', function () {
         let playerChoice = parseInt(this.getAttribute("data-choice"));
         runGame(playerChoice);
     });
