@@ -6,9 +6,9 @@ const buttons = document.getElementsByClassName("btn");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // Modal
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("rules");
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("rules");
+const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function () {
     modal.style.display = "block";
@@ -21,22 +21,6 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
-
-/**
- * Event listener to identify which selection was made 
- * based on which button was pressed 
-*/
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function () {
-        let playerChoice = parseInt(this.getAttribute("data-choice"));
-        runGame(playerChoice);
-    });
-}
-
-/**
- * Event listener for resetting the game 
- */
-document.getElementsByClassName('reset')[0].addEventListener('click', resetScores);
 
 /**
  * Function displays the user and computer selection 
@@ -164,3 +148,21 @@ let botPicture = document.getElementById("computer-picture");
             botPicture.src = "./assets/images/question_mark.png";
             document.getElementById("message").textContent = "";
     }
+
+// Event Listeners
+
+/**
+ * Event listener to identify which selection was made 
+ * based on which button was pressed 
+*/
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+        let playerChoice = parseInt(this.getAttribute("data-choice"));
+        runGame(playerChoice);
+    });
+}
+
+/**
+ * Event listener for resetting the game 
+ */
+document.getElementsByClassName('reset')[0].addEventListener('click', resetScores);
