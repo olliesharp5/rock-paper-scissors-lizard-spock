@@ -24,7 +24,6 @@ window.onclick = function (event) {
     }
 };
 
-
 /**
  * Function sets the player card based on their selection. 
  * Ramdomises the selection for the computer and sets the associated player card 
@@ -42,7 +41,6 @@ function setPlayerAttribute(playerChoice) {
     botPicture.src = `./assets/images/${CHOICES[botChoice]}.png`;
     botPicture.alt = CHOICES[botChoice];
 }
-
 
 /**
  * Function runs the game based on the player and computer choices 
@@ -110,35 +108,19 @@ function checkWinner(playerChoice, botChoice) {
     }
     switch (playerChoice) {
         case "rock":
-            if (botChoice === "scissors" || botChoice === "lizard") {
-                return "Player Wins!";
-            } else {
-                return "Computer Wins!";
-            }
+            return botChoice === "scissors" || botChoice === "lizard" ? "Player Wins!" : "Computer Wins!";
+            
         case "paper":
-            if (botChoice === "rock" || botChoice === "spock") {
-                return "Player Wins!";
-            } else {
-                return "Computer Wins!";
-            }
+            return botChoice === "rock" || botChoice === "spock" ? "Player Wins!" : "Computer Wins!"; 
+            
         case "scissors":
-            if (botChoice === "paper" || botChoice === "lizard") {
-                return "Player Wins!";
-            } else {
-                return "Computer Wins!";
-            }
+            return botChoice === "paper" || botChoice === "lizard" ? "Player Wins!" : "Computer Wins!"; 
+            
         case "lizard":
-            if (botChoice === "spock" || botChoice === "paper") {
-                return "Player Wins!";
-            } else {
-                return "Computer Wins!";
-            }
+            return botChoice === "spock" || botChoice === "paper" ? "Player Wins!" : "Computer Wins!";
+           
         case "spock":
-            if (botChoice === "scissors" || botChoice === "rock") {
-                return "Player Wins!";
-            } else {
-                return "Computer Wins!";
-        } 
+            return botChoice === "scissors" || botChoice === "rock" ? "Player Wins!" : "Computer Wins!";
     }}
             
     /**
