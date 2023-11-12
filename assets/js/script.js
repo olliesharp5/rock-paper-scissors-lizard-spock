@@ -8,19 +8,19 @@ const actionButtons = document.getElementsByClassName("btn");
 const CHOICES = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // Modal
-const modalBody = document.getElementById("myModal");
+const rulesModalBody = document.getElementById("rules-modal");
 const rulesButton = document.getElementById("rules");
-const closeButton = document.getElementsByClassName("close")[0];
+const rulesCloseButton = document.getElementById("rules-close");
 
 rulesButton.onclick = function () {
-    modalBody.style.display = "block";
+    rulesModalBody.style.display = "block";
 };
-closeButton.onclick = function () {
-    modalBody.style.display = "none";
+rulesCloseButton.onclick = function () {
+    rulesModalBody.style.display = "none";
 };
 window.onclick = function (event) {
-    if (event.target == modalBody) {
-        modalBody.style.display = "none";
+    if (event.target == rulesModalBody) {
+        rulesModalBody.style.display = "none";
     }
 };
 
