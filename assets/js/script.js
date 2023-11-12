@@ -24,11 +24,12 @@ window.onclick = function (event) {
     }
 };
 
+
 /**
- * Function displays the user and computer selection 
- * to the game area
-*/
-function runGame(playerChoice) {
+ * Function sets the player card based on their selection. 
+ * Ramdomises the selection for the computer and sets the associated player card 
+ */
+function setPlayerAttribute(playerChoice) {
     let playerPicture = document.getElementById("player-picture");
 
     playerPicture.src = `./assets/images/${CHOICES[playerChoice]}.png`;
@@ -40,6 +41,15 @@ function runGame(playerChoice) {
 
     botPicture.src = `./assets/images/${CHOICES[botChoice]}.png`;
     botPicture.alt = CHOICES[botChoice];
+}
+
+
+/**
+ * Function runs the game based on the player and computer choices 
+ * incrementing individual scores and round scores
+*/
+function runGame(playerChoice) {
+    setPlayerAttribute(playerChoice);
 
     let result = checkWinner(CHOICES[playerChoice], CHOICES[botChoice]);
     document.getElementById("message").textContent = result;
