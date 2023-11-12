@@ -178,7 +178,7 @@ No errors were found when passing though the JSHint validator
 * Upon resetting the game, the pictures wouldn't return to their default "question mark" images - This bug was fixed by calling the player and computer default images in the resetScores function. Additionally I needed to define the variables playerPicture and botPicture at the beginning af the function
 * Upon resetting the game, the win/loss message failed to dissapear - This bug was fixed by  setting the text content of the "message" element to an empty string, effectively hiding the result.
 * modal was scrolling 
-* 
+* Scores weren't reset when the pop-up was clsoed by clicking outside it 
 
 #### Unfixed Bugs
 

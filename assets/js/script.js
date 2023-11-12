@@ -82,11 +82,11 @@ function runGame(playerChoice) {
         // Timeout method pushes alerts by 100 milliseconds
         setTimeout(function() {
         if (playerScore > botScore) {
-           gameOverMessage.textContent = "The game is over. You WON! Close this popup to reset the game";
+            gameOverMessage.textContent = "The game is over." + "\n" + "You WON!" + "\n" + "Close this popup to reset the game";
         } else if (botScore > playerScore) {
-           gameOverMessage.textContent = "The game is over. You LOST! Close this popup to reset the game"
+            gameOverMessage.textContent = "The game is over." + "\n" + "You LOST!" + "\n" + "Close this popup to reset the game";
         } else {
-           gameOverMessage.textContent = "The game is over. It's a tie! Close this popup to reset the game"
+            gameOverMessage.textContent = "The game is over." + "\n" + "It's a TIE!" + "\n" + "Close this popup to reset the game";
         }
         gameOverModal.style.display = "block";
     }, 100);

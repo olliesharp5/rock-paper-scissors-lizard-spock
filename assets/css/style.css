@@ -55,11 +55,11 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(250, 235, 215, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Modal Content/Box */
-.modal-content {
+.rules-modal-content {
     background-color: #FFFFFF;
     margin: 15% auto;
     padding: 20px;
@@ -92,6 +92,24 @@ body {
 .rules-text {
     font-size: 180%;
     color: #b10d19;
+}
+
+.game-over-modal-content {
+    background-color: #FFFFFF;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 275px;
+    max-height: 70%;
+    border-radius: 15px;
+}
+
+.game-over-text {
+    font-weight: bolder;
+    font-size: 200%;
+    color: #b10d19;
+    text-align: center;
 }
 
 .game-area {
