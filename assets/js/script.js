@@ -26,6 +26,18 @@ window.onclick = function (event) {
     }
 };
 
+// Game Over Modal
+gameOverCloseButton.onclick = function() {
+    gameOverModal.style.display = "none";
+resetScores();
+}
+
+window.onclick = function (event) {
+    if (event.target == gameOverModal) {
+        gameOverModal.style.display = "none";
+    }
+}
+
 /**
  * Function sets the player card based on their selection. 
  * Ramdomises the selection for the computer and sets the associated player card 
@@ -69,13 +81,13 @@ function runGame(playerChoice) {
         // Timeout method pushes alerts by 100 milliseconds
         setTimeout(function() {
         if (playerScore > botScore) {
-            alert("The game is over. YOU WON OVERALL!" + "\n" + "\n" + "To begin a new game, click OK");
+           gameOverMessage.textContent = "The game is over. You WON! Close this popup to reset the game";
         } else if (botScore > playerScore) {
-            alert("The game is over. THE COMPUTER WON OVERALL" + "\n" + "\n" + "To begin a new game, click OK");
+           gameOverMessage.textContent = "The game is over. You LOST! Close this popup to reset the game"
         } else {
-            alert("The game is over. It's a tie!" + "\n" + "\n" + "To begin a new game, click OK");
+           gameOverMessage.textContent = "The game is over. It's a tie! Close this popup to reset the game"
         }
-        resetScores();
+        gameOverModal.style.display = "block";
     }, 100);
 }
 }
