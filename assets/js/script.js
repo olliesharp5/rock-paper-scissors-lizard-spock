@@ -6,12 +6,14 @@ const playerPicture = document.getElementById("player-picture");
 const botPicture = document.getElementById("computer-picture");
 const actionButtons = document.getElementsByClassName("btn");
 const CHOICES = ["rock", "paper", "scissors", "lizard", "spock"];
-
-// Modal
 const rulesModalBody = document.getElementById("rules-modal");
 const rulesButton = document.getElementById("rules");
 const rulesCloseButton = document.getElementById("rules-close");
+const gameOverModal = document.getElementById("game-over-modal");
+const gameOverMessage = document.getElementById("game-over-message");
+const gameOverCloseButton = document.getElementById("game-over-close");
 
+// Modal
 rulesButton.onclick = function () {
     rulesModalBody.style.display = "block";
 };
