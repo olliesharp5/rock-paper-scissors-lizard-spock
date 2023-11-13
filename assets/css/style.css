@@ -61,12 +61,13 @@ body {
 /* Modal Content/Box */
 .rules-modal-content {
     background-color: #FFFFFF;
-    margin: 15% auto;
+    margin: 10px auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     box-sizing: border-box;
     border-radius: 20px;
+    font-size: 12px;
 }
 
 /* The Close Button */
@@ -113,7 +114,7 @@ body {
 }
 
 .game-area {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
@@ -223,6 +224,10 @@ footer i {
         height: 170px;
         width: 170px;
     }
+
+    .diagram {
+        width: 50%;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -253,11 +258,15 @@ footer i {
     }
 
     .diagram {
-        width: 40%;
+        width: 300px;
     }
        
     .rules-text {
         font-size: 160%;
+    }
+
+    .rules-modal-content {
+        width: 50%;
     }
 }
 
