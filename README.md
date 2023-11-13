@@ -32,7 +32,7 @@ RPSLS is a user-friendly website that offers an online version of the popular ga
 
 ## Demo
 
-![Website look on different devices](insert image path.png) //use https://ui.dev/amiresponsive
+![Website look on different devices](insert image path.png)
 
 ### A live demo to the website can be found [here](https://olliesharp5.github.io/rock-paper-scissors/)
 
@@ -76,8 +76,7 @@ The wireframe is designed using Balsamiq software. The first draft was edited wi
 ![wireframe](insert filepath for wireframe)
 
 ### Surface
-TO CHANGE 
-I have selected an antique white (#faebd7) and dark green (#435426) color palette. I also used a background image with badminton themes in 2 sections of the site. The color palette was chosen because i wanted it to represent the sophisticated and clinical nature of the sport of badminton as well as directly reflecting the colors seen on a badminton court. 
+I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also used a background color which gradients from dark red (#B10D19) to orange (#f0882f). This provides a dynamic and playful backdrop to the game area on the site. The color pallette for the game area was chosen because it matched that of the logo and also provided good contrast and accessibility. 
 
 ## Technologies
 
@@ -125,18 +124,26 @@ Displaying the image of the selections made by the player and computer is essent
   
 The play buttons section is the gateway for players to interact with the game and make their selections. Being assigned to specific selectors in the game, these buttons provide players with direct control over their gameplay actions. 
 
-![play_buttons](./assets/readme-assets/registration-form.png)
+![play_buttons](./assets/readme-assets/.png)
+
+* Game Over Message
+
+The game over message is a messgae which pops up after the round counter reaches 3 and informes the user of the overall winner. Once the user closes this pop-up, the game resets so a new game can begin. This feature is important as it provides a definitive end to each game and creates a competitive atmosphere based on the outcome. 
+
+![game_over_message](./assets/readme-assets/.png)
 
 * Footer
 
-The footer is a consistent feature that appears at the bottom of every webpage. This footer provides luinbks to my social media pages as well as my GitHub profile so users can view the other projects I have created or been a part of.
+The footer is a consistent feature that appears at the bottom of every webpage. This footer provides links to my social media pages as well as my GitHub profile so users can view the other projects I have created or been a part of.
 
-![footer](./assets/readme-assets/registration-form.png)
+![footer](./assets/readme-assets/.png)
 
 ### Features Left to Implement
 
-In the future I would like to add, 
-* 
+In the future I would like to add,
+
+* A feature where on every turn it would say why someone had won. i.e. "Scissors cuts Paper, computer wins!"
+* A feature where you could adjust the difficulty of the computer the user plays against.
 
 ## Testing
 
@@ -170,18 +177,17 @@ No errors were found when passing though the JSHint validator
 #### Fixed Bugs
 
 * The alert to announce the outcome of the game was triggered in time with the final selection being made by the player - This bug was fixed by adding a "timeout" element in JavaScript to delay the display of the alert by 100 milliseconds. 
-* Images not displaying upon deploying the website to GitHub Pages - 
-* Event listener for buttons not working correctly 
+* Images not displaying upon deploying the website to GitHub Pages - This bug was fixed by amending the file paths for each image ensuring they began with "."
 * Cursor missing from buttons - This bug was resolved by adding the "cursor" atrribute in CSS. 
 * Round counter doesnt reset to zero in line with player scores - This bug occurred as the `updateRound()` function was not called in the `resetScores()` function. To fix this issue I only needed to update the 'resetScores()' function to include the UpdateRound() function.
 * Upon resetting the game, the pictures wouldn't return to their default "question mark" images - This bug was fixed by calling the player and computer default images in the resetScores function. Additionally I needed to define the variables playerPicture and botPicture at the beginning af the function
-* Upon resetting the game, the win/loss message failed to dissapear - This bug was fixed by  setting the text content of the "message" element to an empty string, effectively hiding the result.
-* modal was scrolling 
-* Scores weren't reset when the pop-up was clsoed by clicking outside it 
+* Upon resetting the game, the win/loss message failed to dissapear - This bug was fixed by setting the text content of the "message" element to an empty string, effectively hiding the result.
+* The modals were scrolling with the main site - This bug was fixed by changing the overflow attribute in CSS from overflow to hidden. 
+* Scores weren't reset when the pop-up was closed by clicking outside it - This bug was fixed by calling the resetScores() function when the window was clicked. 
 
 #### Unfixed Bugs
 
-* 
+* Clicking outside the rules modal doesnt close it as expected. 
 
 ## Deployment
 
@@ -198,14 +204,13 @@ No errors were found when passing though the JSHint validator
 
 ### Content
 
-* The code for the modal element in HTML, CSS and JavaScript was created with the assistance of the template found in: https://www.w3schools.com/howto/howto_css_modals.asp 
+* The code for the modal elements in HTML, CSS and JavaScript was created with the assistance of the template found in: https://www.w3schools.com/howto/howto_css_modals.asp 
 * The timeout element used in JavaScript used to delay the display of the alert message was found in: https://www.w3schools.com/jsref/met_win_settimeout.asp 
 * The CSS attribute to fade the backfround color was found in: https://www.w3schools.com/css/css3_gradients.asp 
-* 
 
 ### Media
 
 * The icon used for the favicon is from favicon.io
 * The image used for the title is from pngwing.com
-* The images used for the play cards have been cut from the png used in the title
-* The image used for the question mark card is 
+* The images used for the play cards have been cut from the .png used in the title
+* The image used for the question mark card is from pngwing.com
