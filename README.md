@@ -32,7 +32,7 @@ RPSLS is a user-friendly website that offers an online version of the popular ga
 
 ## Demo
 
-![Website look on different devices](insert image path.png)
+![Website look on different devices](./assets/readme-assets/responsive_design.png)
 
 ### A live demo to the website can be found [here](https://olliesharp5.github.io/rock-paper-scissors/)
 
@@ -73,7 +73,7 @@ The website is designed to be clear and simple. The site has a main title area w
 **Wireframe**
 The wireframe is designed using Balsamiq software. The first draft was edited with the guidance of the mentor.
 
-![wireframe](insert filepath for wireframe)
+![wireframe](./assets/readme-assets/wireframe.png)
 
 ### Surface
 I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also used a background color which gradients from dark red (#B10D19) to orange (#f0882f). This provides a dynamic and playful backdrop to the game area on the site. The color pallette for the game area was chosen because it matched that of the logo and also provided good contrast and accessibility. 
@@ -93,50 +93,54 @@ I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also use
   
 The title is highly crucial in a website for an online game as it sets the first impression for potential players. It not only provides a glimpse into the nature of the game but also facilitates easy discoverability on search engines. A standout title should reflect the essence of the game, captivating the audience's interest and prompting them to explore further.
 
-![title](insert filepath for image)
+![title](./assets/readme-assets/title.png)
 
 
 * The Rules
   
 The rules section is crucial in providing players with a clear understanding of how the game is played. A well-structured and concise explanation of the game mechanics, objectives, and any special features or strategies will help players navigate their gameplay confidently, enhancing their overall experience.
 
-![rules](insert filepath for image)
+![rules_button](./assets/readme-assets/rules_button.png)
+
+![rules_expanded](./assets/readme-assets/rules_expanded.png)
 
 * The Round Counter
   
 The round counter serves as a visual aid that keeps track of the progress in the game. It provides players with a sense of accomplishment as they move through each round and also helps in creating a competitive atmosphere by showcasing progress and moving closer to victory.
 
-![round_counter](insert filepath for image)
+![round_counter](./assets/readme-assets/round_counter.png)
 
 * Player/Computer Score
 
 This section plays a significant role in conveying the current score of both the player and the computer in real-time. Moreover, showcasing scores can add excitement and motivate players to strive for higher achievements and play the game again to win.
 
-![score](insert filepath for image)
+![score](./assets/readme-assets/scores.png)
 
 - Player/Computer Selection Cards & Win/Loss Message
   
 Displaying the image of the selections made by the player and computer is essential for transparent gameplay. By showcasing the choices visually, it offers clarity and builds trust so players can follow and understand the logic behind the results. This enhances immersion in the game's narrative and creates. The Win/Loss message plays a pivotal role in instilling a sense of achievement or motivation in players. It instantly informs them about the outcome and declares the winner or loser once the player and computer cards are revealed. This instant gratification helps in creating a satisfying gameplay loop and keeps players motivated to continue playing or aim for a better outcome in subsequent rounds.
 
-![cards_message](insert filepath for image)
+![cards_default](./assets/readme-assets/cards_default.png)
+
+![cards_play](./assets/readme-assets/cards_play.png)
 
 * Action Buttons
   
 The play buttons section is the gateway for players to interact with the game and make their selections. Being assigned to specific selectors in the game, these buttons provide players with direct control over their gameplay actions. 
 
-![play_buttons](./assets/readme-assets/.png)
+![play_buttons](./assets/readme-assets/play_buttons.png)
 
 * Game Over Message
 
 The game over message is a messgae which pops up after the round counter reaches 3 and informes the user of the overall winner. Once the user closes this pop-up, the game resets so a new game can begin. This feature is important as it provides a definitive end to each game and creates a competitive atmosphere based on the outcome. 
 
-![game_over_message](./assets/readme-assets/.png)
+![game_over_message](./assets/readme-assets/game_over_message.png)
 
 * Footer
 
 The footer is a consistent feature that appears at the bottom of every webpage. This footer provides links to my social media pages as well as my GitHub profile so users can view the other projects I have created or been a part of.
 
-![footer](./assets/readme-assets/.png)
+![footer](./assets/readme-assets/footer.png)
 
 ### Features Left to Implement
 
@@ -157,17 +161,17 @@ In the future I would like to add,
 #### HTML
 No errors were found when passing through the official W3C validator.
 
-![html_validator](insert filepath)
+![html_validator](./assets/readme-assets/html_validator.png)
 
 #### CSS
 No errors were found when passing through the official (Jigsaw) validator.
 
-![css_validator](insert filepath)
+![css_validator](./assets/readme-assets/css_validator.png)
 
 #### WebAim Contrast checker 
 No errors were found when passing through the contrast validator.
 
-![contrast_validator](insert filepath)
+![contrast_validator](./assets/readme-assets/contrast_validator.png)
 
 ### JavaScript
 No errors were found when passing though the JSHint validator
