@@ -36,8 +36,8 @@ window.onclick = function (event) {
     if (event.target == gameOverModal) {
         gameOverModal.style.display = "none";
         resetScores();
-    };
-}
+    }
+};
 
 /**
  * Function sets the player card based on their selection. 

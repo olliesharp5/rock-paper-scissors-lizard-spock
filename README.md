@@ -6,7 +6,7 @@ RPSLS is a user-friendly website that offers an online version of the popular ga
 - [Rock, Paper, Scissors, Lizard, Spock](#rock-paper-scissors-lizard-spock)
 - [Table of Contents](#table-of-contents)
   - [Demo](#demo)
-    - [A live demo to the website can be found \[here\](gitHub deployment link)](#a-live-demo-to-the-website-can-be-found-heregithub-deployment-link)
+    - [A live demo to the website can be found here](#a-live-demo-to-the-website-can-be-found-here)
   - [UX](#ux)
   - [User stories](#user-stories)
     - [Strategy](#strategy)
@@ -34,7 +34,7 @@ RPSLS is a user-friendly website that offers an online version of the popular ga
 
 ![Website look on different devices](insert image path.png) //use https://ui.dev/amiresponsive
 
-### A live demo to the website can be found [here](gitHub deployment link)
+### A live demo to the website can be found [here](https://olliesharp5.github.io/rock-paper-scissors/)
 
 ## UX
 This website is not targeting any specific group of users. 
@@ -45,7 +45,7 @@ As the sole developer of this website, my goal is to create an online game that 
 I came up with the following points, which are applicable to the users:
 
 - As a user, I want to understand the purpose of this website quickly and easily.
-- As a user, I want to easily navigate this website (by using a mouse, a keyboard, or a touch screen).
+- As a user, I want to easily navigate this website (by using a mouse or a touch screen).
 - As a user, I want to have access to the rules of the game.
 - As a user, I want to know how to use the game interface 
 - As a user, I want to know who wins each round
@@ -115,24 +115,23 @@ This section plays a significant role in conveying the current score of both the
 
 ![score](insert filepath for image)
 
-* Player/Computer Selection Cards
+- Player/Computer Selection Cards & Win/Loss Message
   
-Displaying the image of the selections made by the player and computer is essential for transparent gameplay. By showcasing the choices visually, it offers clarity and builds trust so players can follow and understand the logic behind the results. This enhances immersion in the game's narrative and creates.
+Displaying the image of the selections made by the player and computer is essential for transparent gameplay. By showcasing the choices visually, it offers clarity and builds trust so players can follow and understand the logic behind the results. This enhances immersion in the game's narrative and creates. The Win/Loss message plays a pivotal role in instilling a sense of achievement or motivation in players. It instantly informs them about the outcome and declares the winner or loser once the player and computer cards are revealed. This instant gratification helps in creating a satisfying gameplay loop and keeps players motivated to continue playing or aim for a better outcome in subsequent rounds.
 
-![selection_cards](insert filepath for image)
+![cards_message](insert filepath for image)
 
-* Win/Loss Message
-  
-This section plays a pivotal role in instilling a sense of achievement or motivation in players. It instantly informs them about the outcome and declares the winner or loser once the player and computer cards are revealed. This instant gratification helps in creating a satisfying gameplay loop and keeps players motivated to continue playing or aim for a better outcome in subsequent rounds. 
-
-![win_loss_message](insert filepath for image)
-
-* Play Buttons
+* Action Buttons
   
 The play buttons section is the gateway for players to interact with the game and make their selections. Being assigned to specific selectors in the game, these buttons provide players with direct control over their gameplay actions. 
 
 ![play_buttons](./assets/readme-assets/registration-form.png)
 
+* Footer
+
+The footer is a consistent feature that appears at the bottom of every webpage. This footer provides luinbks to my social media pages as well as my GitHub profile so users can view the other projects I have created or been a part of.
+
+![footer](./assets/readme-assets/registration-form.png)
 
 ### Features Left to Implement
 
@@ -144,7 +143,7 @@ In the future I would like to add,
 * I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
 * On mobile devices, I tested the my site on a Samsung Galaxy S21 Ultra with the Samsung browser and an iPhone 13 with the Safari browser.
 * I confirmed that the site is responsive and functions on different screen sizes using the devtools device toolbar.
-* 
+* I tested the logic of the JavaScript ensuring the correct outcomes were determined from each combination of plays. 
 
 ### Validator Testing
 
