@@ -124,6 +124,12 @@ Displaying the image of the selections made by the player and computer is essent
 
 ![cards_play](./assets/readme-assets/cards_play.png)
 
+* Reset Button 
+
+The reset button is in place in case the player wishes to reset the game in the middle of a game. The scores will automatically reset when the game over message is closed  This button adds flexibility for the player as they don't have to go through a whole game to reset the scores. 
+
+![reset_button](./assets/readme-assets/reset_button.png)
+
 * Action Buttons
   
 The play buttons section is the gateway for players to interact with the game and make their selections. Being assigned to specific selectors in the game, these buttons provide players with direct control over their gameplay actions. 
