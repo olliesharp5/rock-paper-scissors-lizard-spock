@@ -13,7 +13,7 @@ const gameOverModal = document.getElementById("game-over-modal");
 const gameOverMessage = document.getElementById("game-over-message");
 const gameOverCloseButton = document.getElementById("game-over-close");
 
-// Modal
+// Modal Listeners
 rulesButton.onclick = function () {
     rulesModalBody.style.display = "block";
 };
@@ -23,21 +23,17 @@ rulesCloseButton.onclick = function () {
 window.onclick = function (event) {
     if (event.target == rulesModalBody) {
         rulesModalBody.style.display = "none";
+    } else if (event.target == gameOverModal) {
+        gameOverModal.style.display = "none";
+        resetScores();
     }
 };
 
-// Game Over Modal
 gameOverCloseButton.onclick = function() {
     gameOverModal.style.display = "none";
 resetScores();
 };
 
-window.onclick = function (event) {
-    if (event.target == gameOverModal) {
-        gameOverModal.style.display = "none";
-        resetScores();
-    }
-};
 
 /**
  * Function sets the player card based on their selection. 

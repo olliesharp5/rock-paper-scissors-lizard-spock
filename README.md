@@ -194,10 +194,9 @@ No errors were found when passing though the JSHint validator
 * Upon resetting the game, the win/loss message failed to dissapear - This bug was fixed by setting the text content of the "message" element to an empty string, effectively hiding the result.
 * The modals were scrolling with the main site - This bug was fixed by changing the overflow attribute in CSS from overflow to hidden. 
 * Scores weren't reset when the pop-up was closed by clicking outside it - This bug was fixed by calling the resetScores() function when the window was clicked. 
+* Clicking outside the rules modal doesnt close it as expected - this bug was fixed 
 
 #### Unfixed Bugs
-
-* Clicking outside the rules modal doesnt close it as expected. 
 
 ## Deployment
 
