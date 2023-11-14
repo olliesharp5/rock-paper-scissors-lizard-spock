@@ -17,7 +17,6 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    margin-bottom: 80px;
 }
 
 .logo {
@@ -34,7 +33,7 @@ body {
     color: #b10d19;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
     box-shadow: 0 2px 2px;
     cursor: pointer;
@@ -87,7 +86,7 @@ body {
 
 .diagram {
     height: auto;
-    width: 70%;
+    width: 60%;
 }
 
 .rules-text {
@@ -120,6 +119,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 7px 7px 20px 20px;
+    margin-bottom: 60px;
 }
 
 .display {
@@ -155,15 +155,11 @@ body {
 .cards {
     height: 120px;
     width: 120px;
-    margin-top: 50px;
-}
-
-#reset {
-    margin-bottom: 60px;
+    margin-top: 30px;
 }
 
 .controls-area {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -190,13 +186,11 @@ body {
 
 footer {
     background-color: #FFFFFF;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    box-shadow: 0 -5px 10px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px 5px;
 }
 
 footer ul {
@@ -204,7 +198,7 @@ footer ul {
     justify-content: space-evenly;
     list-style-type: none;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 footer i {
@@ -227,6 +221,7 @@ footer i {
 
     .diagram {
         width: 50%;
+        height: auto;
     }
 }
 
@@ -234,6 +229,7 @@ footer i {
 @media screen and (min-width: 768px) {
     .game-area {
         width: 80%;
+        height: auto;
     }
 
     .score {
@@ -242,7 +238,6 @@ footer i {
 
     .round {
         font-size: 160%;
-        margin: 20px;
         padding: 30px;
     }
 
@@ -277,6 +272,7 @@ footer i {
         height: 200px;
         width: 200px;
     }
+
 }
 
 /* Media query: desktops and larger (1200px and up) */
