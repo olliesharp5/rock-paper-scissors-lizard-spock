@@ -103,6 +103,7 @@ body {
     max-width: 275px;
     max-height: 70%;
     border-radius: 15px;
+    text-align: center;
 }
 
 .game-over-text {
@@ -253,11 +254,11 @@ footer i {
     }
 
     .diagram {
-        width: 300px;
+        width: 250px;
     }
 
     .rules-text {
-        font-size: 160%;
+        font-size: 140%;
     }
 
     .rules-modal-content {
