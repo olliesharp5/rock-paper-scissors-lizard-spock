@@ -95,7 +95,6 @@ The title is highly crucial in a website for an online game as it sets the first
 
 ![title](./assets/readme-assets/title.png)
 
-
 * The Rules
   
 The rules section is crucial in providing players with a clear understanding of how the game is played. A well-structured and concise explanation of the game mechanics, objectives, and any special features or strategies will help players navigate their gameplay confidently, enhancing their overall experience.
@@ -196,13 +195,14 @@ No errors were found when passing though the JSHint validator
 * Scores weren't reset when the pop-up was closed by clicking outside it - This bug was fixed by calling the resetScores() function when the window was clicked. 
 * Clicking outside the rules modal doesnt close it as expected - There were two window.onclick event listeners in my code, the second one was overriding the first one. To fix this issue I combined the two event listeners into one
 
-
 #### Unfixed Bugs
+
+None 
 
 ## Deployment
 
 * The site was deployed to Git Hub pages using the following steps:
-  - In the Github repository, the Stetting tab.
+  - In the Github repository, the Setting tab.
   - Under General, navigate to Code and Automation and select 'Pages'.
   - In the Build and Deployment section for Source, select 'Deploy from a branch' from the drop-down list.
   - For Branch, select 'main' from the drop-down list and Save.

@@ -1,6 +1,8 @@
 let roundNumber = 0;
 let playerScore = 0;
 let botScore = 0;
+let botChoice = null;
+let playerChoice = null;
 
 const playerPicture = document.getElementById("player-picture");
 const botPicture = document.getElementById("computer-picture");
@@ -29,9 +31,9 @@ window.onclick = function (event) {
     }
 };
 
-gameOverCloseButton.onclick = function() {
+gameOverCloseButton.onclick = function () {
     gameOverModal.style.display = "none";
-resetScores();
+    resetScores();
 };
 
 
@@ -57,7 +59,7 @@ function setPlayerAttribute(playerChoice) {
  * Function runs the game based on the player and computer choices 
  * incrementing individual scores and round scores
 */
-function runGame(playerChoice) {
+function setupPlayerChoices(playerChoice) {
     setPlayerAttribute(playerChoice);
 
     let result = checkWinner(CHOICES[playerChoice], CHOICES[botChoice]);
@@ -74,19 +76,19 @@ function runGame(playerChoice) {
     updateRound();
 
     // Limits rounds to 3 and triggers alert
-    if(roundNumber === 3) {
+    if (roundNumber === 3) {
         // Timeout method pushes alerts by 100 milliseconds
-        setTimeout(function() {
-        if (playerScore > botScore) {
-            gameOverMessage.textContent = "You WON!" + "\n" + "Close this popup to reset the game";
-        } else if (botScore > playerScore) {
-            gameOverMessage.textContent = "You LOST!" + "\n" + "Close this popup to reset the game";
-        } else {
-            gameOverMessage.textContent = "It's a TIE!" + "\n" + "Close this popup to reset the game";
-        }
-        gameOverModal.style.display = "block";
-    }, 100);
-}
+        setTimeout(function () {
+            if (playerScore > botScore) {
+                gameOverMessage.textContent = "You WON!" + "\n" + "Close this popup to reset the game";
+            } else if (botScore > playerScore) {
+                gameOverMessage.textContent = "You LOST!" + "\n" + "Close this popup to reset the game";
+            } else {
+                gameOverMessage.textContent = "It's a TIE!" + "\n" + "Close this popup to reset the game";
+            }
+            gameOverModal.style.display = "block";
+        }, 100);
+    }
 }
 
 /**
@@ -114,55 +116,63 @@ function updateRound() {
  * calls the functions to change scores 
  */
 function checkWinner(playerChoice, botChoice) {
-    if(playerChoice === botChoice) {
+    if (playerChoice === botChoice) {
         return "It's a tie!";
     }
     switch (playerChoice) {
         case "rock":
             return botChoice === "scissors" || botChoice === "lizard" ? "Player Wins!" : "Computer Wins!";
-            
+
         case "paper":
-            return botChoice === "rock" || botChoice === "spock" ? "Player Wins!" : "Computer Wins!"; 
-            
+            return botChoice === "rock" || botChoice === "spock" ? "Player Wins!" : "Computer Wins!";
+
         case "scissors":
-            return botChoice === "paper" || botChoice === "lizard" ? "Player Wins!" : "Computer Wins!"; 
-            
+            return botChoice === "paper" || botChoice === "lizard" ? "Player Wins!" : "Computer Wins!";
+
         case "lizard":
             return botChoice === "spock" || botChoice === "paper" ? "Player Wins!" : "Computer Wins!";
-           
+
         case "spock":
             return botChoice === "scissors" || botChoice === "rock" ? "Player Wins!" : "Computer Wins!";
-    }}
-            
-    /**
-     * Function that resets the scores and values 
-     */        
-    function resetScores() {
-            roundNumber = 0;    
-            playerScore = 0;
-            botScore = 0;
-            playerChoice = null;
-            botChoice = null;
-            updatePlayerScore();
-            updateBotScore();
-            updateRound();
-            playerPicture.src = "./assets/images/question_mark.png";
-            botPicture.src = "./assets/images/question_mark.png";
-            document.getElementById("message").textContent = "";
     }
-
-// Event Listeners
+}
 
 /**
- * Event listener to identify which selection was made 
- * based on which button was pressed 
+ * Function that resets the scores and values 
+ */
+function resetScores() {
+    roundNumber = 0;
+    playerScore = 0;
+    botScore = 0;
+    playerChoice = null;
+    botChoice = null;
+    updatePlayerScore();
+    updateBotScore();
+    updateRound();
+    playerPicture.src = "./assets/images/question_mark.png";
+    botPicture.src = "./assets/images/question_mark.png";
+    document.getElementById("message").textContent = "";
+}
+
+/**
+* Function to set up all the event listeners for the action buttons
 */
-for (let i = 0; i < actionButtons.length; i++) {
-    actionButtons[i].addEventListener('click', function () {
-        let playerChoice = parseInt(this.getAttribute("data-choice"));
-        runGame(playerChoice);
+function setupActionButtonsListener(index) {
+    actionButtons[index].addEventListener('click', function () {
+
+        setupPlayerChoices(parseInt(this.getAttribute("data-choice")));
     });
 }
+
+/**
+ * Function to start the game 
+*/
+function runGame() {
+    for (let i = 0; i < actionButtons.length; i++) {
+        setupActionButtonsListener(i);
+    }
+}
+runGame();
 
 /**
  * Event listener for resetting the game 

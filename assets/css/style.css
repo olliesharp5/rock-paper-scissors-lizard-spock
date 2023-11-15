@@ -270,8 +270,8 @@ footer i {
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
     .cards {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
     }
 
 }
