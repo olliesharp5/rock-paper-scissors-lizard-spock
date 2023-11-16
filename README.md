@@ -76,7 +76,7 @@ The wireframe is designed using Balsamiq software. The first draft was edited wi
 ![wireframe](./assets/readme-assets/wireframe.png)
 
 ### Surface
-I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also used a background color which gradients from dark red (#B10D19) to orange (#f0882f). This provides a dynamic and playful backdrop to the game area on the site. The color pallette for the game area was chosen because it matched that of the logo and also provided good contrast and accessibility. 
+I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also used a background color which gradients from dark red (#B10D19) to orange (#f0882f). This provides a dynamic and playful backdrop to the game area on the site. The color pallette for the game area was chosen because it matched that of the logo and also provided good contrast and accessibility. The font family was chosen as it is easy to read and 
 
 ## Technologies
 
@@ -164,24 +164,24 @@ In the future I would like to add,
 ### Validator Testing
 
 #### HTML
-No errors were found when passing through the official W3C validator.
+No errors or warnings were found when passing through the official W3C validator.
 
 ![html_validator](./assets/readme-assets/html_validator.png)
 
 #### CSS
-No errors were found when passing through the official (Jigsaw) validator.
+No errors or warnings were found when passing through the official (Jigsaw) validator.
 
 ![css_validator](./assets/readme-assets/css_validator.png)
 
 #### WebAim Contrast checker 
-No errors were found when passing through the contrast validator.
+No errors or warnings were found when passing through the contrast validator.
 
 ![contrast_validator](./assets/readme-assets/contrast_validator.png)
 
 ### JavaScript
-No errors were found when passing though the JSHint validator
+No errors or warnings were found when passing though the JSHint validator
 
-![javascript_validator](insert filepath)
+![javascript_validator](./assets/readme-assets/js_validator.png)
 
 #### Fixed Bugs
 

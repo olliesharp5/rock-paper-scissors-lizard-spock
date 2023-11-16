@@ -7,8 +7,7 @@
 }
 
 html {
-    max-height: 1100px;
-    position: relative;
+    max-height: 100vh;
 }
 
 body {
@@ -121,6 +120,7 @@ body {
     border-radius: 25px;
     box-shadow: 7px 7px 20px 20px;
     margin-bottom: 60px;
+    margin-top: 50px;
 }
 
 .display {
@@ -192,6 +192,7 @@ footer {
     margin-right: auto;
     border-radius: 30px;
     box-shadow: 7px 7px 5px 5px;
+    margin-top: 200px;
 }
 
 footer ul {
@@ -273,7 +274,6 @@ footer i {
         height: 180px;
         width: 180px;
     }
-
 }
 
 /* Media query: desktops and larger (1200px and up) */
@@ -282,4 +282,9 @@ footer i {
         height: 250px;
         width: 250px;
     }
+
+    footer {
+        margin-top: 200px;
+    }
+
 }

@@ -36,7 +36,6 @@ gameOverCloseButton.onclick = function () {
     resetScores();
 };
 
-
 /**
  * Function sets the player card based on their selection. 
  * Ramdomises the selection for the computer and sets the associated player card 
