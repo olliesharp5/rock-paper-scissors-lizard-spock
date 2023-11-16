@@ -1,98 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- meta tags -->
-    <meta name="decription" content="RPSLS, Rock Paper Scissors Lizard Spock, Big Bang Theory, game">
-    <meta name="keywords" content="RPSLS, Rock Paper Scissors Lizard Spock, online game, gaming, Big Bang THeory">
+    <meta
+      name="decription"
+      content="RPSLS, Rock Paper Scissors Lizard Spock, Big Bang Theory, game"
+    />
+    <meta
+      name="keywords"
+      content="RPSLS, Rock Paper Scissors Lizard Spock, online game, gaming, Big Bang THeory"
+    />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
     <!-- css stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>RPSLS</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-     <div>
-        <img class="logo" src="assets/images/rpsls_logo.png" alt="logo">
-     </div>
-     <!-- Rules button -->
-     
-        <button id="rules" class="oval-button">Rules</button>
-        <!-- The Rules Modal -->
-        <div id="rules-modal" class="modal">
-            <div class="rules-modal-content">
-                <span id="rules-close" class="close">&times;</span>
-                <p class="rules-text">To initiate play, select your desired move using the buttons located at the bottom of the page. Both your selection and
-                the computer's choice will be revealed, followed by an announcement declaring the winner of the game. At the conclusion
-                of each round, a pop-up notification will appear to inform you of your victory or defeat.</p>
-                <img class="diagram" src="./assets/images/rules.png" alt="rules-diagram">
-                <p class="rules-text">Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors
-                decapitates Lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock, and as it always has, Rock crushes
-                Scissors.</p>
-            </div>
+      <div>
+        <img class="logo" src="assets/images/rpsls_logo.png" alt="logo" />
+      </div>
+      <!-- Rules button -->
+
+      <button id="rules" class="oval-button">Rules</button>
+      <!-- The Rules Modal -->
+      <div id="rules-modal" class="modal">
+        <div class="rules-modal-content">
+          <span id="rules-close" class="close">&times;</span>
+          <p class="rules-text">
+            To initiate play, select your desired move using the buttons located
+            at the bottom of the page. Both your selection and the computer's
+            choice will be revealed, followed by an announcement declaring the
+            winner of the game. At the conclusion of each round, a pop-up
+            notification will appear to inform you of your victory or defeat.
+          </p>
+          <img
+            class="diagram"
+            src="./assets/images/rules.png"
+            alt="rules-diagram"
+          />
+          <p class="rules-text">
+            Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard
+            poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard,
+            Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock, and
+            as it always has, Rock crushes Scissors.
+          </p>
         </div>
+      </div>
     </header>
     <!-- Game area -->
     <main class="game-area">
-        <div class="display">
-            <!-- Player div -->
+      <div class="display">
+        <!-- Player div -->
         <div class="player-wrapper">
-            <h2 class="score">Player Score: <span id="player-score">0</span></h2>
-            <div>
-                <img id="player-picture" class="cards" src="./assets/images/question_mark.png" alt="player-choice">
-            </div>
+          <h2 class="score">Player Score: <span id="player-score">0</span></h2>
+          <div>
+            <img
+              id="player-picture"
+              class="cards"
+              src="./assets/images/question_mark.png"
+              alt="player-choice"
+            />
+          </div>
         </div>
         <!-- Round div -->
         <div class="round">
-            <p>Round <span id="round-count">0</span> of 3</p>
-            <p id="message"></p>
+          <p>Round <span id="round-count">0</span> of 3</p>
+          <p id="message"></p>
         </div>
         <!-- Computer div -->
         <div class="computer-wrapper">
-            <h2 class="score">Computer Score: <span id="computer-score">0</span></h2>
-            <div>
-                <img id="computer-picture" class="cards" src="./assets/images/question_mark.png" alt="computer-choice">
-            </div>
+          <h2 class="score">
+            Computer Score: <span id="computer-score">0</span>
+          </h2>
+          <div>
+            <img
+              id="computer-picture"
+              class="cards"
+              src="./assets/images/question_mark.png"
+              alt="computer-choice"
+            />
+          </div>
         </div>
-        </div>
-        <div id="reset">
-            <button class="reset oval-button">Reset</button>
-        </div>
-        <!-- Buttons area -->
-        <div class="controls-area">
-            <button aria-label="Rock" data-choice="0" class="btn" id="rock">Rock</button>
-            <button aria-label="Paper" data-choice="1" class="btn" id="paper">Paper</button>
-            <button aria-label="Scissors" data-choice="2" class="btn" id="scissors">Scissors</button>
-            <button aria-label="Lizard" data-choice="3" class="btn" id="lizard">Lizard</button>
-            <button aria-label="Spock" data-choice="4" class="btn" id="spock">Spock</button>
-        </div>
+      </div>
+      <div id="reset">
+        <button class="reset oval-button">Reset</button>
+      </div>
+      <!-- Buttons area -->
+      <div class="controls-area">
+        <button aria-label="Rock" data-choice="0" class="btn" id="rock">
+          Rock
+        </button>
+        <button aria-label="Paper" data-choice="1" class="btn" id="paper">
+          Paper
+        </button>
+        <button aria-label="Scissors" data-choice="2" class="btn" id="scissors">
+          Scissors
+        </button>
+        <button aria-label="Lizard" data-choice="3" class="btn" id="lizard">
+          Lizard
+        </button>
+        <button aria-label="Spock" data-choice="4" class="btn" id="spock">
+          Spock
+        </button>
+      </div>
 
-        <!-- The game over modal -->
-    <div id="game-over-modal" class="modal">
+      <!-- The game over modal -->
+      <div id="game-over-modal" class="modal">
         <div class="game-over-modal-content">
-            <span id="game-over-close" class="close">&times;</span>
-            <p id="game-over-message" class="game-over-text"></p>
+          <span id="game-over-close" class="close">&times;</span>
+          <p id="game-over-message" class="game-over-text"></p>
         </div>
-    </div>
-
+      </div>
     </main>
+    <!-- Footer element -->
     <footer>
-        <ul>
-            <li><a href="https://www.facebook.com/" target="blank" rel="noopener" aria-label="Visit my Facebook page (opens in new tab)"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="blank" rel="noopener" aria-label="Visit my Instagram page (opens in new tab)"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://github.com/olliesharp5" target="blank" rel="noopener" aria-label="Visit my GitHub page (opens in new tab)"><i class="fa-brands fa-github"></i>
-</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a
+            href="https://www.facebook.com/"
+            target="blank"
+            rel="noopener"
+            aria-label="Visit my Facebook page (opens in new tab)"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="blank"
+            rel="noopener"
+            aria-label="Visit my Instagram page (opens in new tab)"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/olliesharp5"
+            target="blank"
+            rel="noopener"
+            aria-label="Visit my GitHub page (opens in new tab)"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
     <script src="assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/cd6b09716b.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/cd6b09716b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

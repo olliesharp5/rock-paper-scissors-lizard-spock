@@ -34,7 +34,7 @@ RPSLS is a user-friendly website that offers an online version of the popular ga
 
 ![Website look on different devices](./assets/readme-assets/responsive_design.png)
 
-### A live demo to the website can be found [here](https://olliesharp5.github.io/rock-paper-scissors/)
+### A live demo to the website can be found [here](https://olliesharp5.github.io/rock-paper-scissors-lizard-spock/)
 
 ## UX
 This website is not targeting any specific group of users. 
@@ -76,7 +76,7 @@ The wireframe is designed using Balsamiq software. The first draft was edited wi
 ![wireframe](./assets/readme-assets/wireframe.png)
 
 ### Surface
-I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also used a background color which gradients from dark red (#B10D19) to orange (#f0882f). This provides a dynamic and playful backdrop to the game area on the site. The color pallette for the game area was chosen because it matched that of the logo and also provided good contrast and accessibility. The font family was chosen as it is easy to read and 
+I have selected white (#FFFFFF) and dark red (#B10D19) color palette. I also used a background color which gradients from dark red (#B10D19) to orange (#f0882f). This provides a dynamic and playful backdrop to the game area on the site. The color pallette for the game area was chosen because it matched that of the logo and also provided good contrast and accessibility. The font family was chosen as it is easy to read.
 
 ## Technologies
 
